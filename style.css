@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.container_float{
+  width:100vw;
+  height:100vh;
+  background-color:#c2c6ce;
+}
+.style{
+  background-color:white;
+  border-radius: 5px;
+  float:left;
+  margin-top:40px;
+  margin-left:40px;
+}
+/* per il float riguardante la mia presentazione */
+.float1{
+  width:30vw;
+  height:40vh;
+}
+/* float riguardante i miei successi */
+.float2{
+  width:60vw;
+  height:60vh;
+}
+/* per il titolo i miei top tre */
+.float2>h4{
+  margin-left:2.5%;
+  margin-top:10px;
+}
+/* creo un contenitore per il contenuto del secondo float */
+.contenitore, .contenitore2{
+  position:relative;
+  top:15px;
+  left:2.5%;
+  width:95%;
+  height:25%;
+  margin-top:10px;
+}
+.contenitore{
+  border-bottom:1px solid black;
+}
+.immagine{
+  width:12%;
+  height:90%;
+  float:left;
+  margin-right:5px;
+  top:0;
+  left:0;
+}
+.float2:after{
+  display: table;
+  content:'';
+  clear:both;
+}
+/* per il terzo float, quello sotto la mia presentazione */
+.float3{
+  position:absolute;
+  top:calc(40vh + 10px);
+  width:30vw;
+  height:10vh;
+}
+/* per il float 4, il footer */
+.float4{
+  float:left;
+  width: calc(90vw + 40px);
+  height:20%;
+  padding:10px;
+}
+.footer{
+  padding-top:10px;
+  padding-right:50%;
+}
+.container_float:after{
+  display: table;
+  content:'';
+  clear:both;
+}
+/* per allineare tutto al centro nel primo float */
+.icons1{
+  text-align: center;
+}
+/* per il mio nome  */
+.icons1>h3{
+  color: red;
+}
+/* per la scritta web developer */
+h3+h4{
+  margin:5px 0;
+}
+.icons1>p{
+  margin:2px;
+  font-size:15px;
+}
+/* immagine profilo */
+.icons1>img{
+  margin-top:10px;
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+}
+/* per il bottone */
+.icons1>input{
+  margin-top:20px;
+  width:100px;
+  height:40px;
+  background-color: #8e0c0c;
+  color:white;
+}
+/* facebook, linkedin, twitter */
+.icons2 > img {
+  width:30px;
+  height:30px;
+  margin-left:20%;
+  margin-top:5%;
+  border-radius: 50%;
+}
+/* heart,share e star */
+.icons3 > img{
+  width:20px;
+  height:20px;
+  margin:5px;
+}
